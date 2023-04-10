@@ -27,7 +27,7 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-    <title>Tables - Basic Tables | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
+    <title>스인개_취업사이트</title>
 
     <meta name="description" content="" />
 
@@ -54,7 +54,7 @@
     <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
 
     <!-- Page CSS -->
-
+    <link rel="stylesheet" href="../assets/vendor/css/pages/career-board.css" />
     <!-- Helpers -->
     <script src="../assets/vendor/js/helpers.js"></script>
 
@@ -150,14 +150,14 @@
             <!-- 훈련생관리 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">훈련생 관리</span></li>
             <!-- 훈련생 토글 -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="User interface">훈련생 관리</div>
               </a>
               <!-- 훈련생 하위메뉴 -->
               <ul class="menu-sub">
-                <li class="menu-item active">
+                <li class="menu-item">
                   <a href="all-student.html" class="menu-link">
                     <div data-i18n="Accordion">전체 훈련생</div>
                   </a>
@@ -238,7 +238,7 @@
                     <div data-i18n="Vertical Form">협약기업 채용현황</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="final-company.html" class="menu-link">
                     <div data-i18n="Horizontal Form">성과발표회</div>
                   </a>
@@ -248,7 +248,7 @@
             <!-- 채용게시판 -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">채용게시판</span></li>
             <!-- 채용게시판 토글 -->
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="javascript:void(0)" class="menu-link menu-toggle">
                 <i class="menu-icon tf-icons bx bx-box"></i>
                 <div data-i18n="User interface">채용게시판</div>
@@ -256,11 +256,11 @@
               <!-- 채용게시판 하위메뉴 -->
               <ul class="menu-sub">
                 <li class="menu-item">
-                  <a href="career-board.html" class="menu-link">
+                  <a href="ui-accordion.html" class="menu-link">
                     <div data-i18n="Accordion">채용 공고</div>
                   </a>
                 </li>
-                <li class="menu-item">
+                <li class="menu-item active">
                   <a href="career-result.html" class="menu-link">
                     <div data-i18n="Accordion">채용 결과</div>
                   </a>
@@ -323,196 +323,50 @@
             <!-- Content -->
 
             <div class="container-xxl flex-grow-1 container-p-y">
-              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">훈련생관리/</span> 전체 훈련생 명단</h4>
-               
- 
-              <!-- Hoverable Table rows -->
-              <div class="card">
-                <div class="container">
-                  <div class="row">
-                    <h4 class="card-header">스마트인재개발원 전체 훈련생 명단</h4>
-                    <div class="col-9">
-                    </div>
-                      <div class="col-3"><h5><span>훈련인원 - 1명</span></h5></div>
-                    </div>
-                    </div>
-               
-               
-                
-                  
-               
-                <div class="table-responsive text-nowrap card-body">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th><i class="fab fa-angular fa-lg text-danger me-3"></i>이름</th>
-                        <th>거주</th>
-                        <th>연락처</th>
-                        <th>성별</th>
-                        <th>생년월일</th>
-                        <th>학교</th>
-                        <th>훈련장소</th>
-                        <th>진행상태</th>
-                        <th>훈련대상구분</th>
-                        <th>구분</th>
-                       <th>비고</th>
-                        <th>Actions</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-border-bottom-0">
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i><a href ="student_detail.html">권우진</a></td>
-                        
-                        <!-- Modal -->
-                        <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered" role="document">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h5 class="modal-title" id="modalCenterTitle" style="font-size: 30px;">상담기록</h5>
-                                <button
-                                  type="button"
-                                  class="btn-close"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"
-                                ></button>
-                              </div>
-                              <div class="modal-body">
-                                <div class="row">
-                                  <div class="col mb-3">
-                                    <p><textarea class="form-control" placeholder="내용입력" rows="5"></textarea></p>
-                                  </div>
-                                </div>
-                              <div class="modal-footer">
-                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
-                                 취소
-                                </button>
-                                <button type="button" class="btn btn-primary">저장</button>
-                              </div>
-                            </div>
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">채용게시판/</span> 채용 결과</h4>
+              <div class="row">
+                <!-- 채용 결과 게시판 -->
+                <div class="col-md-12">
+                  <!-- 콘텐츠 영역 -->
+                  <div class="card mb-4">
+                    <h2 class="card-header">스마트인재개발원 채용 결과 게시판(23.04.10 기준)</h2>
+                    <hr class="my-0" />
+                    <!-- 게시판 테이블 -->
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-12">
+                            <label class="form-label" for="final-company">해당 공고에 대한 결과는 업체명을 클릭하여 상세보기로 들어가 확인하실 수 있습니다.</label><br>
+                            <table class="table" id="final-company">
+                                <thead>
+                                  <tr>
+                                    <td class="col-sm-1">구분</td>
+                                    <td>기업명</td>
+                                    <td>발표일</td>
+                                    <td>협약기업 유무</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <!-- 내용1 -->
+                                  <tr>
+                                    <td class="col-sm-1 mine-center">1</td>
+                                    <td><a href="#">[(오)지윤 소프트] 채용결과 1명 합격</a></td>
+                                    <td class="mine-center">23.04.10</td>
+                                    <td class="mine-center">협약</td>
+                                  </tr>
+                                  <!-- /내용1 -->
+                                  
+                                  
+                                </tbody>
+                              </table>
                           </div>
-                        </div>
-                      </div>
+                      </form>
                     </div>
-                        
-                        </td>
-                        <td>부산</td>
-                        <td>
-                          010-7745-8585
-                        </td>
-                        <td>여</td>
-                        <td>950809</td>
-                        <td>동명대학교</td>
-                        <td>캠퍼스</td>
-                        <td>수료
-                        </td>
-                        <td>실업자</td>
-                        <td><span class="badge bg-label-warning me-1">취업</span></td>
-                        <td><strong type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modalCenter">상담기록</strong></td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><i class="fab fa-angular fa-lg text-danger me-3"></i>홍길동</td>
-                        <td>광주</td>
-                        <td>
-                          010-1234-5678
-                        </td>
-                        <td>남</td>
-                        <td>920329</td>
-                        <td>고려대학교</td>
-                        <td>CGI</td>
-                        <td>훈련중</td>
-                        <td>재직자</td>
-                        <td><span class="badge bg-label-info me-1">희망</span></td>
-                        <td><strong type="button"
-                          data-bs-toggle="modal"
-                          data-bs-target="#modalCenter">상담기록</strong></td>
-                        <td>
-                          <div class="dropdown">
-                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-edit-alt me-1"></i> Edit</a
-                              >
-                              <a class="dropdown-item" href="javascript:void(0);"
-                                ><i class="bx bx-trash me-1"></i> Delete</a
-                              >
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                   
-                    </tbody>
-                  </table>
-                </div>
-                <div class="demo-inline-spacing">
-                    <!-- Basic Pagination -->
-                    <nav aria-label="Page navigation">
-                      <ul class="pagination justify-content-center">
-                        <li class="page-item first">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevrons-left"></i
-                          ></a>
-                        </li>
-                        <li class="page-item prev">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevron-left"></i
-                          ></a>
-                        </li>
-                        <li class="page-item active">
-                          <a class="page-link" href="javascript:void(0);">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">4</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="javascript:void(0);">5</a>
-                        </li>
-                        <li class="page-item next">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevron-right"></i
-                          ></a>
-                        </li>
-                        <li class="page-item last">
-                          <a class="page-link" href="javascript:void(0);"
-                            ><i class="tf-icon bx bx-chevrons-right"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </nav>
-                    <!--/ Basic Pagination -->
+                    <!-- /콘텐츠 영역 -->
                   </div>
-              </div>
-              <!--/ Hoverable Table rows -->
-
+                </div><!-- /채용 결과 게시판 -->
               
               <hr class="my-5" />
-
-
-
             </div>
             <!-- / Content -->
 
